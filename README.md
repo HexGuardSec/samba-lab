@@ -1,52 +1,35 @@
-Parfait ! Voici une version **pro, GitHub-friendly et agréable à lire**, prête à copier-coller dans ton README :
-# 🖥️ Samba Lab Project
+# Samba Network Lab
 
-## 📖 Overview
+## Project Overview
 
-This project simulates a **small company network** using virtual machines (VMs).
-The main goal is to practice **file sharing management** with **Samba** on Linux servers.
+This project is a **Samba network lab** designed to simulate a professional multi-user environment. It demonstrates how to configure Samba shares with **group-based permissions** in a Linux server environment and how multiple clients can access shared resources securely.
 
-## 🌐 Network Setup
+The lab is set up for **learning, testing, and showcasing IT administration skills**. It is ideal for anyone wanting to understand:
 
-* **Server VM**: Ubuntu Server hosting the shared folders.
-* **Client VMs**: Kali Linux machines (**Alice**, **Bob**, **Charlie**) acting as company workstations.
-* All VMs communicate over an **internal network** with static IPs.
+- Samba configuration
+- User and group management
+- Network connectivity between multiple machines
+- File and folder permissions
+- Practical administration in a Linux environment
 
-## 🗂️ Samba Configuration
+### Users and Roles
+- **Emilie** – Accountant (access to `commun` and `compta`)  
+- **Clement** – Developer (access to `commun` and `dev`)  
 
-* **Shared folder**: `/srv/partage` on the server.
-* **Bob**: ✅ read/write access
-* **Alice**: 🔒 read-only access
-* **Charlie**: ✅ read/write access
-* Samba service is configured to allow **controlled access** for each user based on their permissions.
+### Shared Folders
+- **commun** – accessible by all users  
+- **dev** – accessible only by the developer group  
+- **compta** – accessible only by the accountant group  
 
-**Key settings in `smb.conf`:**
+---
 
-```ini
-[partage]
-   path = /srv/partage
-   browsable = yes
-   read only = no
-   guest ok = no
-   create mask = 0777
-   directory mask = 0777
-```
+## Objectives
 
-## ⚡ Features Demonstrated
+By completing this lab, you will learn to:
 
-* 👥 Creation of multiple users and groups.
-* 🔐 Management of file permissions and ownership.
-* 🖇️ Mounting Samba shares from client machines.
-* 📂 Testing user access rights (read/write).
-* 🌐 Network connectivity between server and clients.
-
-
-## 📸 Screenshots
-
-Include screenshots to demonstrate:
-
-1. VM consoles showing **usernames and IP addresses**.
-2. **Server folder structure** and permissions.
-3. **Samba configuration** file (`smb.conf`).
-4. Successful mounting and accessing of shares from **each client**.
-
+1. Configure a Samba server in Linux  
+2. Create and manage users and groups  
+3. Apply file permissions based on groups  
+4. Share folders securely between different clients  
+5. Test network connectivity and Samba access  
+6. Document and maintain an IT lab setup professionally
