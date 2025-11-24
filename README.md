@@ -1,9 +1,3 @@
-Ah ok 😅 je comprends mieux maintenant ! Tu veux **un seul README complet**, tout en texte normal Markdown, **pas coupé en blocs séparés ou code**, prêt à push et qui explique tout ton lab, les fichiers, la configuration, les screenshots… bref, un README **pro et cohérent**.
-
-Voici une version **tout en un** :
-
----
-
 # Samba Network Lab
 
 ## Project Overview
