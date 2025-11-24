@@ -1,0 +1,2 @@
+emilie:x:1001:1001:Emilie Accountant:/home/emilie:/bin/bash
+clement:x:1002:1002:Clement Dev:/home/clement:/bin/bash
